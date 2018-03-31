@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phase2app　つぶやき</title>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width">  <!-- head内にこのタグ設定を追記する -->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <header>Phase2課題 つぶやき</header>
+    <%= yield %>
+    <footer>NTTPCコミュニケーションズ　赤池 2018/03/31</footer>
+  </body>
+</html>

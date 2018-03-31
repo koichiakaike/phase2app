@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>つぶやき:</strong>
+  <%= @post.content %>
+</p>
+
+<%= link_to 'つぶやきを編集する', edit_post_path(@post) %> |
+<%= link_to '一覧に戻る', posts_path %>

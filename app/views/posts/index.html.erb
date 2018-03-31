@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>つぶやき　一覧</h1>
+<table>
+  <thead>
+    <tr>
+      <th>つぶやき</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.content %></td>
+        <td><%= link_to 'つぶやきをみる', post %></td>
+        <td><%= link_to 'つぶやきを編集する', edit_post_path(post) %></td>
+        <td><%= link_to 'つぶやきを消す', post, method: :delete, data: { confirm: '本当に消していいですか？' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to '新しいつぶやきを投稿する', new_post_path %>

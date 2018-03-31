@@ -1,0 +1,12 @@
+{
+  "name": "phase2app",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "4.0.0-beta",
+    "jquery": "^3.3.1"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Koichi Akaike <k-akaike@nttpc.co.jp>",
+  "license": "MIT"
+}
