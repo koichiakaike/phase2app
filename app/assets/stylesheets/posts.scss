@@ -25,11 +25,13 @@ html {
 body {
   margin: 0px;
   text-align: center;
-  color: white;
-  background-image: url('assets/header.jpg');
+  color: black;
+//  background-image: url('header.jpg');
 }
 
-
+a {
+  color: white;
+}
 footer {
   width: 100%;
   text-align:center;

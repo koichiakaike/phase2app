@@ -13,9 +13,9 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.content %></td>
-        <td><%= link_to 'つぶやきをみる', post %></td>
-        <td><%= link_to 'つぶやきを編集する', edit_post_path(post) %></td>
-        <td><%= link_to 'つぶやきを消す', post, method: :delete, data: { confirm: '本当に消していいですか？' } %></td>
+        <td><button type="button" class="btn btn-primary btn-xs"><%= link_to 'つぶやきをみる', post %></button></td>
+        <td><button type="button" class="btn btn-warning btn-xs"><%= link_to 'つぶやきを編集する', edit_post_path(post) %></button></td>
+        <td><button type="button" class="btn btn-danger btn-xs"><%= link_to 'つぶやきを消す', post, method: :delete, data: { confirm: '本当に消していいですか？' } %></button></td>
       </tr>
     <% end %>
   </tbody>
@@ -23,4 +23,4 @@
 
 <br>
 
-<%= link_to '新しいつぶやきを投稿する', new_post_path %>
+<button type="button" class="btn btn-warning btn-xs"><%= link_to '新しいつぶやきを投稿する', new_post_path %></button>
